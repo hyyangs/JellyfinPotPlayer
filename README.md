@@ -10,9 +10,11 @@ jellyfin调用potplayer播放串流URL视频教程：
 
 5、双击potplayer.reg文件添加注册表。
 
-6、打开油猴，添加新脚本，把userscript.js文件里的内容全部复制，然后把userscript.js文件里的jellyfinIp改成你jellyfin的ip和端口号。
+6、编辑userscript.js文件，把let jellyfinIp = '127.0.0.1:8096'改成你jellyfin的ip和端口号。
 
-7、在你的jellyfin里选择任意视频，右键点击复制串流URL地址，用地址里的api_key=后的内容替换userscript.js里apiKey。
+6、在你的jellyfin里选择任意视频，右键点击复制串流URL地址，把userscript.js文件里的let apiKey = 'XXXX'中的XXXX改成你刚刚复制串流URL地址里api_key=后的内容。
+
+7、打开油猴，添加新脚本，把userscript.js文件里的内容全部复制，保存。
 
 8、保存油猴，刷新页面，大功告成，可以愉快看视频了！
 
